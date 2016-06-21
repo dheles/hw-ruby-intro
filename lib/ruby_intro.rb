@@ -12,11 +12,8 @@ def max_2_sum arr
   while arr.length < 2
     arr.push(0)
   end
-  sum = 0
-  working = arr.sort.reverse
-  sum += working[0]
-  sum += working[1]
-  return sum
+  arr.sort!.reverse!
+  arr[0] + arr[1]
 end
 
 # sum_to_n?([-1,-2,3,4,6,-8], 12)
